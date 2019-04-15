@@ -5,8 +5,10 @@
 {% endblock %}
 
 {% block body %}
-  <p> Test text marti is at hannover, for a week. visiting sister and attending conference
-  </p>
 
-  <a href="{{ url_for('more')}}">See more ....</a>
-{% endblock %}
+  <form action="{{ url_for('hello') }}" method="post">
+    <input type="text" name="name" placeholder=""Enter Your Name"><br>
+    <button>Submit</button>
+  </form>
+
+{% endblock %}:<wbr>
